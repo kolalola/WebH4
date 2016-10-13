@@ -1,0 +1,200 @@
+D:\Python34\python.exe D:/web-programming/WebH4/requestWebob.py
+301 TLS Redirect
+Server: Varnish
+Location: https://wikipedia.org/wikipedia.org
+Content-Length: 0
+Accept-Ranges: bytes
+Date: Thu, 13 Oct 2016 21:14:29 GMT
+X-Varnish: 2052466627
+Age: 0
+Via: 1.1 varnish
+Connection: close
+X-Cache: cp3031 int
+X-Cache-Status: int
+Set-Cookie: WMF-Last-Access=13-Oct-2016;Path=/;HttpOnly;secure;Expires=Mon, 14 Nov 2016 12:00:00 GMT
+X-Client-IP: 212.193.76.52
+Set-Cookie: GeoIP=RU:SVE:Yekaterinburg:56.86:60.61:v4; Path=/; secure; Domain=.wikipedia.org
+Content-Type: text/plain; charset=utf-8
+
+
+------------
+
+
+200 OK
+Server: nginx
+Date: Thu, 13 Oct 2016 21:14:30 GMT
+Content-Length: 32
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Content-Type: text/plain; charset=utf-8
+
+{
+  "origin": "212.193.76.52"
+}
+
+
+
+------------
+
+
+200 OK
+Server: nginx
+Date: Thu, 13 Oct 2016 21:14:31 GMT
+Content-Length: 318
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Content-Type: text/plain; charset=utf-8
+
+{
+  "args": {
+    "1": "2", 
+    "2/0": "", 
+    "error": "True", 
+    "foo": "bar"
+  }, 
+  "headers": {
+    "Accept": "*/*", 
+    "Accept-Encoding": "identity", 
+    "Content-Length": "0", 
+    "Host": "httpbin.org"
+  }, 
+  "origin": "212.193.76.52", 
+  "url": "http://httpbin.org/get?foo=bar&1=2&2%2F0&error=True"
+}
+
+
+
+------------
+
+
+200 OK
+Server: nginx
+Date: Thu, 13 Oct 2016 21:14:31 GMT
+Content-Length: 390
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Content-Type: text/plain; charset=utf-8
+
+{
+  "args": {}, 
+  "data": "", 
+  "files": {}, 
+  "form": {
+    "1": "2", 
+    "2/0": "", 
+    "error": "True", 
+    "foo": "bar"
+  }, 
+  "headers": {
+    "Accept-Encoding": "identity", 
+    "Content-Length": "29", 
+    "Content-Type": "application/x-www-form-urlencoded", 
+    "Host": "httpbin.org"
+  }, 
+  "json": null, 
+  "origin": "212.193.76.52", 
+  "url": "http://httpbin.org/post"
+}
+
+
+
+------------
+
+
+302 FOUND
+Server: nginx
+Date: Thu, 13 Oct 2016 21:14:32 GMT
+Content-Length: 223
+Connection: close
+Location: /cookies
+Set-Cookie: country=Ru; Path=/
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Content-Type: text/plain; charset=utf-8
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<title>Redirecting...</title>
+<h1>Redirecting...</h1>
+<p>You should be redirected automatically to target URL: <a href="/cookies">/cookies</a>.  If not click the link.
+
+
+------------
+
+
+200 OK
+Server: nginx
+Date: Thu, 13 Oct 2016 21:14:32 GMT
+Content-Length: 20
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Content-Type: text/plain; charset=utf-8
+
+{
+  "cookies": {}
+}
+
+
+
+------------
+
+
+302 FOUND
+Server: nginx
+Date: Thu, 13 Oct 2016 21:14:33 GMT
+Content-Length: 247
+Connection: close
+Location: /relative-redirect/3
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Content-Type: text/plain; charset=utf-8
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<title>Redirecting...</title>
+<h1>Redirecting...</h1>
+<p>You should be redirected automatically to target URL: <a href="/relative-redirect/3">/relative-redirect/3</a>.  If not click the link.
+
+
+------------
+
+
+200 OK
+Server: nginx
+Date: Thu, 13 Oct 2016 21:14:35 GMT
+Content-Length: 433
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Content-Type: text/plain; charset=utf-8
+
+{
+  "args": {}, 
+  "data": "", 
+  "files": {}, 
+  "form": {
+    "firstname": "Nikita", 
+    "group": "fo340001", 
+    "lastname": "Ragozin", 
+    "message": "empty_message"
+  }, 
+  "headers": {
+    "Accept-Encoding": "identity", 
+    "Content-Length": "70", 
+    "Content-Type": "application/x-www-form-urlencoded", 
+    "Host": "httpbin.org"
+  }, 
+  "json": null, 
+  "origin": "212.193.76.52", 
+  "url": "http://httpbin.org/post"
+}
+
+
+
+------------
+
+
+
+Process finished with exit code 0
